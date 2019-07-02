@@ -35,31 +35,31 @@
           はじめまして、やけゆうと申します。
         </p>
         <p class="main-p2">
-          サンプル
+          サンプルサンプルサンプルサンプルサンプルサンプル
         </p>
         <p class="main-p3">
-          サンプル
+          サンプルサンプルサンプルサンプルサンプルサンプル
         </p>
         <p class="main-p4">
-          サンプル
+          サンプルサンプルサンプルサンプルサンプルサンプル
         </p>
         <p class="main-p5">
-          サンプル
+          サンプルサンプルサンプルサンプルサンプルサンプル
         </p>
         <p class="main-p6">
-          サンプル
+          サンプルサンプルサンプルサンプルサンプルサンプル
         </p>
         <p class="main-p7">
-          サンプル
+          サンプルサンプルサンプルサンプルサンプルサンプル
         </p>
         <p class="main-p8">
-          サンプル
+          サンプルサンプルサンプルサンプルサンプルサンプル
         </p>
         <p class="main-p9">
-          サンプル
+          サンプルサンプルサンプルサンプルサンプルサンプル
         </p>
         <p class="main-p10">
-          サンプル
+          サンプルサンプルサンプルサンプルサンプルサンプル
         </p>
       </div>
     </div>
@@ -187,18 +187,18 @@
           </div>
           <h3 class="title-text">ジャンル</h3>
           <p class="title-sub">仕事内容</p>
-          <p class="caption">コメントコメントコメントコメント<br>コメントコメントコメントコメント</p>
+          <p class="caption">コメントコメントコメントコメント<br>コメントコメントコメントコメント<br>コメントコメントコメントコメント</p>
         </div>
         <!-- サービス２ -->
         <div class="col-md-4">
           <div class="circle">
             <span class="circle2">
-              <i class="fas fa-wordpress"></i>
+              <i class="fab fa-wordpress"></i>
             </span>
           </div>
           <h3 class="title-text">ジャンル</h3>
           <p class="title-sub">仕事内容</p>
-          <p class="caption">コメントコメントコメントコメント<br>コメントコメントコメントコメント</p>
+          <p class="caption">コメントコメントコメントコメント<br>コメントコメントコメントコメント<br>コメントコメントコメントコメント</p>
         </div>
         <!-- サービス３ -->
         <div class="col-md-4">
@@ -209,7 +209,7 @@
           </div>
           <h3 class="title-text">ジャンル</h3>
           <p class="title-sub">仕事内容</p>
-          <p class="caption">コメントコメントコメントコメント<br>コメントコメントコメントコメント</p>
+          <p class="caption">コメントコメントコメントコメント<br>コメントコメントコメントコメント<br>コメントコメントコメントコメント</p>
         </div>
       </div>
     </div>
@@ -218,35 +218,40 @@
   <!-- コンタクトフォーム -->
   <div class="contact fadein">
     <div class="container text-center">
-      <p class="contact-p">Contact</p>
-      <div class="row">
-        <div class="col-sm-6">
-          <form id="contactForm">
+      <h2 class="h2-contents">Contact me</h2>
+      <!-- 入力フォーム部分 -->
+      <div class="row contact-form">
+        <div class="col-sm-6 col-sm-offset-3">
+          <form id="contactForm" role="form" method="post" action="php/contact.php">
             <!-- 名前入力フォーム -->
             <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" class="form-control" placeholder="Your Name" required="required">
+              <label class="sr-only" for="name">Name</label>
+              <input class="form-control" type="text" id="name" name="name" placeholder="Your Name*" required="required" data-validation-required-message="Please enter your name."/>
             </div>
-            <!-- email入力フォーム -->
+            <!-- E-mail入力フォーム -->
             <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" class="form-control" placeholder="Your Email" required="required">
+              <label class="sr-only" for="email">Email</label>
+              <input class="form-control" type="email" id="email" name="email" placeholder="Your Email*" required="required" data-validation-required-message="Please enter your email address."/>
             </div>
             <!-- 内容入力フォーム -->
             <div class="form-group">
-              <textarea class="form-control" row="7" placeholder="Your Message" required="required"></textarea>
+              <textarea class="form-control" rows="7" id="message" name="message" placeholder="Your Message*" required="required" data-validation-required-message="Please enter your message."></textarea>
             </div>
-            <!-- 送信ボタン -->
             <div class="text-center">
-              <button class="btn" type="submit">submit</button>
+              <button class="btn btn-block btn-round btn-d" id="cfsubmit" type="submit">Submit</button>
             </div>
           </form>
         </div>
       </div>
     </div>
+    <div class="main-contents"></div>
+    <div class="parent"><a href="#" class="san"></a></div>
   </div>
   
   <footer>
+    <p class="footer-p">
+      "LIVE A LIFE BY MYSELF"
+    </p>
   </footer>
   
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>    
