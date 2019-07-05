@@ -11,6 +11,17 @@ $(function(){
     });
   });
 
+  // スクロールするとヘッダーメニューのバックグラウンドに色を付ける
+  $(window).scroll(function(){
+    if($(window).scrollTop() > 300){
+      // 300px以上スクロールした時の動作
+      $('.navbar-custom').removeClass('navbar-transparent');
+    }else{
+      // 元のトップ位置に戻ったときの動作
+      $('.navbar-custom').addClass('navbar-transparent');
+    }
+  });
+
   // トップ画像のフェードイン
   $(function(){
     var h = $(window).height();
@@ -21,7 +32,7 @@ $(function(){
     $('#loader-bg').delay(1000).slideUp(1000);
     $('body').css('display','block');
   });
-
+  
   // ヘッダー画像のスライド（jQueryプラグイン）
   $('header').vegas({
     delay: 7000,
@@ -39,12 +50,12 @@ $(function(){
       { src: 'assets/img/slide4.jpg'},
     ]
   });
-
+  
   // タイピング風アニメーション
   $('.demo').t({
     speed: 100
   });
-
+  
   // 該当箇所にスムーススクロール
   $('a[href^="#"]').click(function(){
     var speed = 800;
@@ -54,4 +65,6 @@ $(function(){
     $('body,html').animate({scrollTop:position}, speed, 'swing');
     return false;
   });
+  
+  
 });

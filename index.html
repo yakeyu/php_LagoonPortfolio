@@ -5,20 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>MyPortfolio</title>
+  
+  <!-- デフォルトcss -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/vegas.min.css">
+  <!-- カスタムcss -->
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <!-- バックグラウンド背景 -->
+  
+  <!-- ローディング画面 -->
   <div id="loader-bg">
     <div id="loading">
-        <div class="loader">Loading...</div>
+      <div class="loader">Loading...</div>
     </div>
   </div>
   
-  <!-- ヘッダー -->
+  <!-- トップ画像スライド -->
   <header>
+    <!-- ナビゲーションバーの記述 -->
+    <nav class="navbar navbar-expand navbar-transparent navbar-custom">
+      <div class="container">
+        <a href="#" class="navbar-brand text-white">Lagoon</a>
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link navbar-list" href="#message">Message</a></li>
+          <li class="nav-item"><a class="nav-link navbar-list" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link navbar-list" href="#service">Service</a></li>
+          <li class="nav-item"><a class="nav-link navbar-list" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- イメージ画像 -->
     <div class="top-img">
       <div class="logo demo">
         <div class="dd"><i class="fab fa-bity fa-5x"></i></div>
@@ -28,7 +45,7 @@
   </header>
   
   <!-- メッセージ -->
-  <div class="main fadein">
+  <div class="main fadein" id="message">
     <div class="container main-r">
       <div class="letter">
         <p class="main-p">
@@ -66,7 +83,7 @@
   </div>
   
   <!-- about -->
-  <div class="about fadein">
+  <div class="about fadein" id="about">
     <div class="container">
       <h2 class="h2-contents ab">About</h2>
       <div class="row wrap">
@@ -173,7 +190,7 @@
   </div>
   
   <!-- service -->
-  <div class="service fadein">
+  <div class="service fadein" id="service">
     <div class="container">
       <h2 class="h2-contents">Service</h2>
       <h3 class="service-h3 text-center">テキストテキストテキストテキスト<br class="br-sp">テキストテキストテキストテキスト</h3>
@@ -216,7 +233,7 @@
   </div>
   
   <!-- コンタクトフォーム -->
-  <div class="contact fadein">
+  <div class="contact fadein" id="contact">
     <div class="container text-center">
       <h2 class="h2-contents">Contact me</h2>
       <!-- 入力フォーム部分 -->
