@@ -34,7 +34,7 @@ $(function(){
   });
   
   // ヘッダー画像のスライド（jQueryプラグイン）
-  $('header').vegas({
+  $('#header-slide').vegas({
     delay: 7000,
     timer: true,
     overlay: 'https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.0/overlays/01.png',
