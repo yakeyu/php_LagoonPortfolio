@@ -739,16 +739,19 @@ footer{
 /* -----------------------------------------------------
 ログイン画面
 ----------------------------------------------------- */
-.login{
+.login, .register{
   height: 100vh;
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+}
+
+.login{
   background: url('../img/login.jpg') no-repeat;
   background-size: cover;
 }
 
-.login-box{
+.form-box{
   width: 280px;
   position: absolute;
   top: 50%;
@@ -757,7 +760,7 @@ footer{
   color: #fff;
 }
 
-.login-box h1{
+.form-box h1{
   float: left;
   font-size: 40px;
   border-bottom: 6px solid rgba(80, 253, 152, 0.8);
@@ -791,7 +794,7 @@ footer{
   margin: 0 10px;
 }
 
-.login-box .btn{
+.form-box .btn{
   width: 100%;
   background: none;
   border: 2px solid rgba(80, 253, 152, 0.8);
@@ -803,7 +806,7 @@ footer{
   text-transform: capitalize;
 }
 
-.login-box .btn:hover{
+.form-box .btn:hover{
   background: rgba(80, 253, 152, 0.4);
 }
 
@@ -811,8 +814,10 @@ footer{
 /* -----------------------------------------------------
 登録画面
 ----------------------------------------------------- */
-
-
+.register{
+  background: url('../img/register.jpg') no-repeat;
+  background-size: cover;
+}
 
 
 
