@@ -25,7 +25,7 @@ $(function(){
   // トップ画像のフェードイン
   $(function(){
     var h = $(window).height();
-    $('body').css('display', 'none');
+    // $('body').css('display', 'none');
     $('#loader-bg ,#loader').height(h).css('display', 'block');
   });
   $(window).on('load',function(){

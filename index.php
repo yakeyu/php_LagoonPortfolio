@@ -32,8 +32,8 @@
           <li class="nav-item"><a class="nav-link navbar-list" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link navbar-list" href="#service">Service</a></li>
           <li class="nav-item"><a class="nav-link navbar-list" href="#contact">Contact</a></li>
-          <li class="nav-item"><a class="nav-link navbar-list" href="login.html">Login</a></li>
-          <li class="nav-item"><a class="nav-link navbar-list" href="register.html">Register</a></li>
+          <li class="nav-item"><a class="nav-link navbar-list" href="login.php">Login</a></li>
+          <li class="nav-item"><a class="nav-link navbar-list" href="register.php">Register</a></li>
         </ul>
       </div>
     </nav>
@@ -241,20 +241,20 @@
       <!-- 入力フォーム部分 -->
       <div class="row contact-form">
         <div class="col-sm-6 col-sm-offset-3">
-          <form id="contactForm" role="form" method="post" action="php/contact.php">
+          <form id="contactForm" role="form" method="post" action="check.php">
             <!-- 名前入力フォーム -->
             <div class="form-group">
               <label class="sr-only" for="name">Name</label>
-              <input class="form-control" type="text" id="name" name="name" placeholder="Your Name*" required="required" data-validation-required-message="Please enter your name."/>
+              <input class="form-control" type="text" id="name" name="name" placeholder="Your Name*" required="required"/>
             </div>
             <!-- E-mail入力フォーム -->
             <div class="form-group">
               <label class="sr-only" for="email">Email</label>
-              <input class="form-control" type="email" id="email" name="email" placeholder="Your Email*" required="required" data-validation-required-message="Please enter your email address."/>
+              <input class="form-control" type="email" id="email" name="email" placeholder="Your Email*" required="required"/>
             </div>
             <!-- 内容入力フォーム -->
             <div class="form-group">
-              <textarea class="form-control" rows="7" id="message" name="message" placeholder="Your Message*" required="required" data-validation-required-message="Please enter your message."></textarea>
+              <textarea class="form-control" rows="7" id="message" name="message" placeholder="Your Message*" required="required"></textarea>
             </div>
             <div class="text-center">
               <button class="btn btn-block btn-round btn-d" id="cfsubmit" type="submit">Submit</button>

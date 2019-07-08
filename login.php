@@ -12,16 +12,16 @@
   <!-- カスタムcss -->
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body class="login" style="block">
+<body id="login">
   
   <header>
     <!-- ナビゲーションバーの記述 -->
     <nav class="navbar navbar-expand navbar-transparent navbar-custom">
       <div class="container">
-        <a href="index.html" class="navbar-brand text-white">Lagoon</a>
+        <a href="index.php" class="navbar-brand text-white">Lagoon</a>
         <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link navbar-list" href="login.html">Login</a></li>
-          <li class="nav-item"><a class="nav-link navbar-list" href="register.html">Register</a></li>
+          <li class="nav-item"><a class="nav-link navbar-list" href="login.php">Login</a></li>
+          <li class="nav-item"><a class="nav-link navbar-list" href="register.php">Register</a></li>
         </ul>
       </div>
     </nav>
