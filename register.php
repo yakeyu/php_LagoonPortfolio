@@ -12,7 +12,7 @@
   <!-- カスタムcss -->
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body class="register" style="block">
+<body id="register">
   
   <header>
     <!-- ナビゲーションバーの記述 -->

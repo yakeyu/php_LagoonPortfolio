@@ -485,7 +485,6 @@ Forms
 /* 入力ファイルの共通スタイル */
 .form-control {
   font-family: "Roboto Condensed", sans-serif;
-  text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 11px;
   height: 33px;
@@ -737,20 +736,35 @@ footer{
 }
 
 /* -----------------------------------------------------
-ログイン画面
+各ページの画面サイズ・フォント・イメージ画像
 ----------------------------------------------------- */
-.login, .register{
+#login{
+  background: url('../img/login.jpg') no-repeat;
+}
+
+#register{
+  background: url('../img/register.jpg') no-repeat;
+}
+
+#check{
+  background: url('../img/register.jpg') no-repeat;
+}
+
+#thanks{
+  background: url('../img/register.jpg') no-repeat;
+}
+
+#login, #register, #check, #thanks{
   height: 100vh;
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-}
-
-.login{
-  background: url('../img/login.jpg') no-repeat;
   background-size: cover;
 }
 
+/* -----------------------------------------------------
+各ページ共通フォームの記述
+----------------------------------------------------- */
 .form-box{
   width: 280px;
   position: absolute;
@@ -803,23 +817,36 @@ footer{
   font-size: 18px;
   cursor: pointer;
   margin: 12px 0;
-  text-transform: capitalize;
 }
 
 .form-box .btn:hover{
   background: rgba(80, 253, 152, 0.4);
 }
 
-
 /* -----------------------------------------------------
-登録画面
+問い合わせ確認画面・thanks画面のテキスト・ボタン表示
 ----------------------------------------------------- */
-.register{
-  background: url('../img/register.jpg') no-repeat;
-  background-size: cover;
+#check .textbox,
+#thanks .textbox{
+  display: flex;
 }
 
+#check p,
+#thanks p{
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+}
 
+#check .return, 
+#check .ok{
+  float: left;
+  width: 45%;
+}
+
+#check .return{
+  margin-right: 10%;
+}
 
 /*--------------------------------------------------------------
 レスポンシブ

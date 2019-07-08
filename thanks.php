@@ -1,3 +1,26 @@
+<?php
+
+  $name = htmlspecialchars($_POST['name']);
+  $email = htmlspecialchars($_POST['email']);
+  $message = htmlspecialchars($_POST['message']);
+
+  // DBに接続
+  $dsn = 'mysql:dbname=php_LagoonPortfolio;host=localhost';
+  $user = 'root';
+  $password = '';
+
+  $dbh = new PDO($dsn, $user, $password);
+  $dbh->query('SET NAMES utf8');
+
+  // DBに登録
+  $sql = 'INSERT INTO contact (name,email,message) VALUES ("'.$name.'","'.$email.'","'.$message.'")';
+  $stmt = $dbh->prepare($sql);
+  $stmt->execute();
+
+  // DB切断
+  $dbh = null;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,35 +35,27 @@
   <!-- カスタムcss -->
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body id="login">
-  
-  <header>
-    <!-- ナビゲーションバーの記述 -->
-    <nav class="navbar navbar-expand navbar-transparent navbar-custom">
-      <div class="container">
-        <a href="index.php" class="navbar-brand text-white">Lagoon</a>
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link navbar-list" href="login.php">Login</a></li>
-          <li class="nav-item"><a class="nav-link navbar-list" href="register.php">Register</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+<body id="thanks">
   
   <div class="form-box">
-    <h1>Login</h1>
-    <!-- ユーザーネームの入力欄 -->
+    <h1>Thanks to contact me!</h1>
+    <!-- ユーザーネームの確認 -->
     <div class="textbox">
       <i class="fas fa-user"></i>
-      <input type="text" placeholder="User Name">
+      <p name><?php echo $name; ?></p>
     </div>
-    <!-- パスワードの入力欄 -->
+    <!-- メールアドレスの確認 -->
     <div class="textbox">
-      <i class="fas fa-lock"></i>
-      <input type="password" placeholder="Password">
+      <i class="fas fa-envelope"></i>
+      <p><?php echo $email; ?></p>
     </div>
-    <!-- sign in ボタン -->
-    <input type="button" class="btn" value="Sign In">
+    <!-- 問い合わせ内容の確認 -->
+    <div class="textbox">
+      <i class="fas fa-comment-dots"></i>
+      <p><?php echo $message; ?></p>
+    </div>
+
+    <a href="index.php"><button class="btn">TOP</button></a>
   </div>
   
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>    
