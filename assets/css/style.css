@@ -859,13 +859,16 @@ footer{
 #check .return, 
 #check .ok,
 #rg-check .return,
-#rg-check .ok{
+#rg-check .ok,
+#rg-thanks .top,
+#rg-thanks .login{
   float: left;
   width: 45%;
 }
 
 #check .return,
-#rg-check .return{
+#rg-check .return,
+#rg-thanks .top{
   margin-right: 10%;
 }
 

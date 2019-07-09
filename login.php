@@ -27,21 +27,21 @@
     </nav>
   </header>
   
-  <div class="form-box">
+  <form name="login-form" class="form-box" method="POST" action="main.php">
     <h1>Login</h1>
-    <!-- ユーザーネームの入力欄 -->
+    <!-- E-mailの入力欄 -->
     <div class="textbox">
-      <i class="fas fa-user"></i>
-      <input type="text" placeholder="User Name">
+      <i class="fas fa-envelope"></i>
+      <input type="email" name="email" placeholder="E-mail">
     </div>
     <!-- パスワードの入力欄 -->
     <div class="textbox">
       <i class="fas fa-lock"></i>
-      <input type="password" placeholder="Password">
+      <input type="password" name="password" placeholder="Password">
     </div>
     <!-- sign in ボタン -->
-    <input type="button" class="btn" value="Sign In">
-  </div>
+    <button type="submit" name="login" class="btn">Log in</button>
+  </form>
   
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>    
   <script src="https://kit.fontawesome.com/deb123295c.js"></script>

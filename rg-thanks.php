@@ -1,7 +1,8 @@
 <?php
 
   $userName = htmlspecialchars($_POST['userName']);
-  $pass = htmlspecialchars($_POST['pass']);
+  $email = htmlspecialchars($_POST['email']);
+  $pass = htmlspecialchars($_POST['password']);
 
   // DBに接続
   $dsn = 'mysql:dbname=php_LagoonPortfolio;host=localhost';
@@ -12,7 +13,7 @@
   $dbh->query('SET NAMES utf8');
 
   // DBに登録
-  $sql = 'INSERT INTO userData (userName,pass) VALUES ("'.$userName.'","'.$pass.'")';
+  $sql = 'INSERT INTO userData (userName,email,password) VALUES ("'.$userName.'","'.$email.'","'.$pass.'")';
   $stmt = $dbh->prepare($sql);
   $stmt->execute();
 
@@ -43,7 +44,13 @@
       <i class="fas fa-user"></i>
       <p><?php echo $userName; ?></p>
     </div>
-    <a href="index.php"><button class="btn">TOP</button></a>
+    <!-- E-mailの確認 -->
+    <div class="textbox">
+      <i class="fas fa-envelope"></i>
+      <p><?php echo $email; ?></p>
+    </div>
+    <a href="index.php"><button class="btn top">TOP</button></a>
+    <a href="login.php"><button class="btn login">LOG IN</button></a>
   </div>
   
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>    

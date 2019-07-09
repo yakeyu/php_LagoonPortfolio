@@ -34,10 +34,15 @@
       <i class="fas fa-user"></i>
       <input type="text" name="userName" placeholder="User Name" required="required">
     </div>
+    <!-- E-mail入力フォーム -->
+    <div class="textbox">
+      <i class="fas fa-envelope"></i>
+      <input type="email" name="email" placeholder="E-mail" required="required">
+    </div>
     <!-- パスワードの入力欄 -->
     <div class="textbox">
       <i class="fas fa-lock"></i>
-      <input type="password" name="pass" placeholder="Password" required="required">
+      <input type="password" name="password" placeholder="Password" required="required">
     </div>
     <!-- 登録ボタン -->
     <button type="submit" class="btn">Register</button>
