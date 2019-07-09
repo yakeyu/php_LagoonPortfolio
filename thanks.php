@@ -42,7 +42,7 @@
     <!-- ユーザーネームの確認 -->
     <div class="textbox">
       <i class="fas fa-user"></i>
-      <p name><?php echo $name; ?></p>
+      <p><?php echo $name; ?></p>
     </div>
     <!-- メールアドレスの確認 -->
     <div class="textbox">

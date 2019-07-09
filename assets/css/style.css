@@ -254,7 +254,7 @@ header{
 about
 ----------------------------------------------------------- */
 .about{
-  background-image: url("../img/okinawa.jpg");
+  background-image: url("../img/about.jpg");
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -747,14 +747,22 @@ footer{
 }
 
 #check{
-  background: url('../img/register.jpg') no-repeat;
+  background: url('../img/check.jpg') no-repeat;
+}
+
+#rg-check{
+  background: url('../img/rg-check.jpg') no-repeat;
 }
 
 #thanks{
-  background: url('../img/register.jpg') no-repeat;
+  background: url('../img/thanks.jpg') no-repeat;
 }
 
-#login, #register, #check, #thanks{
+#rg-thanks{
+  background: url('../img/rg-thanks.jpg') no-repeat;
+}
+
+#login, #register, #check, #rg-check, #thanks, #rg-thanks{
   height: 100vh;
   margin: 0;
   padding: 0;
@@ -824,29 +832,48 @@ footer{
 }
 
 /* -----------------------------------------------------
-問い合わせ確認画面・thanks画面のテキスト・ボタン表示
+各ページのテキスト・ボタン表示
 ----------------------------------------------------- */
+#register input::placeholder,
+#login input::placeholder{
+  color: rgba(255, 255, 255, 0.6);
+}
+
 #check .textbox,
-#thanks .textbox{
+#rg-check .textbox,
+#thanks .textbox,
+#rg-thanks .textbox{
   display: flex;
 }
 
 #check p,
-#thanks p{
+#rg-check p,
+#thanks p,
+#rg-thanks p{
   display: flex;
   align-items: center;
   margin-left: 5px;
+  color: #fff;
 }
 
 #check .return, 
-#check .ok{
+#check .ok,
+#rg-check .return,
+#rg-check .ok{
   float: left;
   width: 45%;
 }
 
-#check .return{
+#check .return,
+#rg-check .return{
   margin-right: 10%;
 }
+
+#thanks a,
+#rg-thanks a{
+  opacity: 1;
+}
+
 
 /*--------------------------------------------------------------
 レスポンシブ
