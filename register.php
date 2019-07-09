@@ -18,7 +18,7 @@
     <!-- ナビゲーションバーの記述 -->
     <nav class="navbar navbar-expand navbar-transparent navbar-custom">
       <div class="container">
-        <a href="index.html" class="navbar-brand text-white">Lagoon</a>
+        <a href="index.php" class="navbar-brand text-white">Lagoon</a>
         <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link navbar-list" href="login.php">Login</a></li>
           <li class="nav-item"><a class="nav-link navbar-list" href="register.php">Register</a></li>
@@ -27,21 +27,21 @@
     </nav>
   </header>
   
-  <div class="form-box">
+  <form class="form-box" method="post" action="rg-thanks.php">
     <h1>Register</h1>
     <!-- ユーザーネームの入力欄 -->
     <div class="textbox">
       <i class="fas fa-user"></i>
-      <input type="text" placeholder="User Name">
+      <input type="text" name="userName" placeholder="User Name" required="required">
     </div>
     <!-- パスワードの入力欄 -->
     <div class="textbox">
       <i class="fas fa-lock"></i>
-      <input type="password" placeholder="Password">
+      <input type="password" name="pass" placeholder="Password" required="required">
     </div>
     <!-- 登録ボタン -->
-    <input type="button" class="btn" value="Register">
-  </div>
+    <button type="submit" class="btn">Register</button>
+  </form>
   
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>    
   <script src="https://kit.fontawesome.com/deb123295c.js"></script>
