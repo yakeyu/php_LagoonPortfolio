@@ -32,8 +32,8 @@
           <li class="nav-item"><a class="nav-link navbar-list" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link navbar-list" href="#service">Service</a></li>
           <li class="nav-item"><a class="nav-link navbar-list" href="#contact">Contact</a></li>
-          <li class="nav-item"><a class="nav-link navbar-list" href="login.php">Login</a></li>
-          <li class="nav-item"><a class="nav-link navbar-list" href="register.php">Register</a></li>
+          <!-- <li class="nav-item"><a class="nav-link navbar-list" href="login.php">Login</a></li>
+          <li class="nav-item"><a class="nav-link navbar-list" href="register.php">Register</a></li> -->
         </ul>
       </div>
     </nav>
@@ -61,7 +61,7 @@
         </p>
         <p class="main-p4">
           在職中は副店長として食品スーパーの商品管理・従業員教育に携わり、<br>
-          大手コンビニチェーン店にてスーパーバイザー業務も経験。
+          コンビニチェーン店にてスーパーバイザー業務も経験。
         </p>
         <p class="main-p7">
           十年目に体調を崩したのをきっかけに、健康に関して興味を抱くようになり<br>
@@ -72,7 +72,7 @@
           退職後、プログラミング・英語学習を始めました。
         </p>
         <p class="main-p10">
-          現在はヘルスケア事業への転職を視野に入れて、活動中です。
+          現在はヘルスケア事業への転職も視野に入れて、活動中です。
         </p>
       </div>
     </div>
@@ -149,20 +149,36 @@
             沖縄県うるま市出身
           </p>
           <p class="about-p2">
-            元スーパー店員・ヨガプログラマー
+            1982年8月26日生
           </p>
           <p class="about-p3">
             東南アジアでヨガ生活を夢見る30代
           </p>
-          <p class="about-p4">大学卒業後</p>
+          <p class="about-p4">経歴</p>
           <table style="margin:0 auto;color:#fff">
             <tr>
+            <td>2002年</td>
+              <td>琉球大学情報工学科入学</td>
+            </tr>
+            <tr>
+            <td>2004年</td>
+              <td>琉球大学情報工学科退学</td>
+            </tr>
+            <tr>
+            <td></td>
+              <td>サンエー与勝シティにてバイト開始</td>
+            </tr>
+            <tr>
             <td>2008年</td>
+              <td>琉球大学法文学部経済専攻卒業</td>
+            </tr>
+            <tr>
+            <td></td>
               <td>サンエーに管理職として新卒入社</td>
             </tr>
             <tr>
               <td>2013年</td>
-              <td>本島北部地区へ転勤。EDLP政策に取り組む</td>
+              <td>為又シティへ転勤。EDLP政策に取り組む</td>
             </tr>
             <tr>
               <td>2016年</td>
@@ -178,7 +194,7 @@
             </tr>
             <tr>
               <td>2019年</td>
-              <td>１年後、システム開発会社より内定を頂く</td>
+              <td>システム開発会社より内定を頂く</td>
 
             </tr>
           </table>
