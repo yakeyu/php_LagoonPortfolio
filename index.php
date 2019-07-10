@@ -50,35 +50,29 @@
   <div class="main fadein" id="message">
     <div class="container main-r">
       <div class="letter">
-        <p class="main-p">
+      <p class="main-p">
           はじめまして、やけゆうと申します。
         </p>
         <p class="main-p2">
-          サンプルサンプルサンプルサンプルサンプルサンプル
+          地元大手流通業にて十年間、マネジメント業務に従事。
         </p>
         <p class="main-p3">
-          サンプルサンプルサンプルサンプルサンプルサンプル
+          沖縄を拠点に転職活動中です。
         </p>
         <p class="main-p4">
-          サンプルサンプルサンプルサンプルサンプルサンプル
-        </p>
-        <p class="main-p5">
-          サンプルサンプルサンプルサンプルサンプルサンプル
-        </p>
-        <p class="main-p6">
-          サンプルサンプルサンプルサンプルサンプルサンプル
+          在職中は副店長として食品スーパーの商品管理・従業員教育に携わり、<br>
+          大手コンビニチェーン店にてスーパーバイザー業務も経験。
         </p>
         <p class="main-p7">
-          サンプルサンプルサンプルサンプルサンプルサンプル
-        </p>
-        <p class="main-p8">
-          サンプルサンプルサンプルサンプルサンプルサンプル
+          十年目に体調を崩したのをきっかけに、健康に関して興味を抱くようになり<br>
+          パーソナルジム・ホットヨガに通い出す。
         </p>
         <p class="main-p9">
-          サンプルサンプルサンプルサンプルサンプルサンプル
+          その中でキャリアチェンジという道が浮かび、<br>
+          退職後、プログラミング・英語学習を始めました。
         </p>
         <p class="main-p10">
-          サンプルサンプルサンプルサンプルサンプルサンプル
+          現在はヘルスケア事業への転職を視野に入れて、活動中です。
         </p>
       </div>
     </div>
@@ -131,6 +125,18 @@
                 <div class="eg progress-bar active" style="width:20%"></div>
               </div>
             </div>
+            <div class="col-md-12 col-xs-12">
+              <h3 class="bar" style="color:#fff;">Management</h3>
+              <div class="progress">
+                <div class="eg progress-bar active" style="width:90%"></div>
+              </div>
+            </div>
+            <div class="col-md-12 col-xs-12">
+              <h3 class="bar" style="color:#fff;">Yoga</h3>
+              <div class="progress">
+                <div class="eg progress-bar active" style="width:50%"></div>
+              </div>
+            </div>
           </div>
         </div>
         
@@ -143,36 +149,37 @@
             沖縄県うるま市出身
           </p>
           <p class="about-p2">
-            元スーパー店員・駆け出しエンジニア
+            元スーパー店員・ヨガプログラマー
           </p>
           <p class="about-p3">
-            東南アジアでヨガ生活を夢見る３０代
+            東南アジアでヨガ生活を夢見る30代
           </p>
           <p class="about-p4">大学卒業後</p>
           <table style="margin:0 auto;color:#fff">
             <tr>
-              <td>→</td>
-              <td>県内小売企業に管理職として新卒入社</td>
+            <td>2008年</td>
+              <td>サンエーに管理職として新卒入社</td>
             </tr>
             <tr>
-              <td>→</td>
+              <td>2013年</td>
               <td>本島北部地区へ転勤。EDLP政策に取り組む</td>
             </tr>
             <tr>
-              <td>→</td>
-              <td>大手コンビニチェーンへSV候補として出向</td>
+              <td>2016年</td>
+              <td>ローソン沖縄へSV候補として出向</td>
             </tr>
             <tr>
-              <td>→</td>
+              <td>2017年</td>
               <td>体調を崩し、休職期間中にヨガと出会う</td>
             </tr>
             <tr>
-              <td>→</td>
-              <td>ノマド生活を目指し、退職・プログラミング学習開始</td>
+              <td>2018年</td>
+              <td>退職＆プログラミング・英語学習開始</td>
             </tr>
             <tr>
-              <td>→</td>
+              <td>2019年</td>
               <td>１年後、システム開発会社より内定を頂く</td>
+
             </tr>
           </table>
           <div class="row icon">
@@ -194,41 +201,41 @@
   <!-- service -->
   <div class="service fadein" id="service">
     <div class="container">
-      <h2 class="h2-contents">Service</h2>
-      <h3 class="service-h3 text-center">テキストテキストテキストテキスト<br class="br-sp">テキストテキストテキストテキスト</h3>
+    <h2 class="h2-contents">Want to Job</h2>
+      <h3 class="service-h3 text-center">現在希望する職種です。<br class="br-sp">ご興味がございましたら、下記の問い合わせフォームよりお願い致します。</h3>
       <div class="row text-center">
         <!-- サービス１ -->
         <div class="col-md-4">
           <div class="circle">
             <span class="circle1">
-              <i class="fas fa-desktop"></i>
+              <i class="fas fa-building"></i>
             </span>
           </div>
-          <h3 class="title-text">ジャンル</h3>
-          <p class="title-sub">仕事内容</p>
-          <p class="caption">コメントコメントコメントコメント<br>コメントコメントコメントコメント<br>コメントコメントコメントコメント</p>
+          <h3 class="title-text">マネジメント</h3>
+          <p class="title-sub">総合職</p>
+          <p class="caption">大手企業での10年の経験を活かし、<br>店舗管理全般に対応可能です。<br>お困りの方はぜひご検討ください。</p>
         </div>
         <!-- サービス２ -->
         <div class="col-md-4">
           <div class="circle">
             <span class="circle2">
-              <i class="fab fa-wordpress"></i>
+              <i class="fas fa-desktop"></i>
             </span>
           </div>
-          <h3 class="title-text">ジャンル</h3>
-          <p class="title-sub">仕事内容</p>
-          <p class="caption">コメントコメントコメントコメント<br>コメントコメントコメントコメント<br>コメントコメントコメントコメント</p>
+          <h3 class="title-text">ホームページ制作</h3>
+          <p class="title-sub">サイト構築</p>
+          <p class="caption">Webサイトのコーディングを行います。<br>お気軽にご相談くださいませ。</p>
         </div>
         <!-- サービス３ -->
         <div class="col-md-4">
           <div class="circle">
             <span class="circle3">
-              <i class="fas fa-building"></i>
+              <i class="fab fa-wordpress"></i>
             </span>
           </div>
-          <h3 class="title-text">ジャンル</h3>
-          <p class="title-sub">仕事内容</p>
-          <p class="caption">コメントコメントコメントコメント<br>コメントコメントコメントコメント<br>コメントコメントコメントコメント</p>
+          <h3 class="title-text">Webマーケティング</h3>
+          <p class="title-sub">SNS運営</p>
+          <p class="caption">ブログ・twitterなどを活用し、<br>自社ブランドの認知度を上げます。</p>
         </div>
       </div>
     </div>
