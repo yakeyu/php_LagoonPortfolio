@@ -292,7 +292,7 @@ about
 }
 
 .about{
-  padding-top: 50px;
+  padding-top: 70px;
   padding-bottom: 60px;
   height: auto;
 }
@@ -382,7 +382,7 @@ service
 -------------------------------------------------- */
 
 .service{
-  padding-top: 50px;
+  padding-top: 70px;
   background-image: url("../img/yoga.jpg");
   background-repeat: no-repeat;
   background-size: cover;
