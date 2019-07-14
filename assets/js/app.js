@@ -69,6 +69,11 @@ $(function(){
     $('body,html').animate({scrollTop:position}, speed, 'swing');
     return false;
   });
-  
-  
+
+  // messageセクションのトグル表示（スマホ）
+  $('.example').click(function(){
+    $(".letter").slideToggle();
+  });
+
+
 });
