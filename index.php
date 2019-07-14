@@ -26,14 +26,14 @@
     <!-- ナビゲーションバーの記述 -->
     <nav class="navbar navbar-expand navbar-transparent navbar-custom">
       <div class="container">
-        <a href="#" class="navbar-brand text-white">Lagoon</a>
-        <ul class="navbar-nav">
+        <div class="navbar-header">
+          <a href="#" class="navbar-brand text-white">Lagoon</a>
+        </div>
+        <ul id="menu" class="navbar-nav">
           <li class="nav-item"><a class="nav-link navbar-list" href="#message">Message</a></li>
           <li class="nav-item"><a class="nav-link navbar-list" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link navbar-list" href="#service">Service</a></li>
           <li class="nav-item"><a class="nav-link navbar-list" href="#contact">Contact</a></li>
-          <!-- <li class="nav-item"><a class="nav-link navbar-list" href="login.php">Login</a></li>
-          <li class="nav-item"><a class="nav-link navbar-list" href="register.php">Register</a></li> -->
         </ul>
       </div>
     </nav>
@@ -46,10 +46,14 @@
     </div>
   </header>
   
+  <!-- レスポンシブ時に表示 -->
+  <div class="button fadein scrollin">
+    <button class="example sp">MESSAGE</button>
+  </div>
   <!-- メッセージ -->
-  <div class="main fadein" id="message">
+  <div class="main fadein pc" id="message">
     <div class="container main-r">
-      <div class="letter">
+      <div class="letter new">
       <p class="main-p">
           はじめまして、やけゆうと申します。
         </p>
@@ -60,15 +64,15 @@
           沖縄を拠点に転職活動中です。
         </p>
         <p class="main-p4">
-          在職中は副店長として食品スーパーの商品管理・従業員教育に携わり、<br>
+          在職中は副店長として食品スーパーの商品管理・従業員教育に携わり、<br class="br-sp">
           コンビニチェーン店にてスーパーバイザー業務も経験。
         </p>
         <p class="main-p7">
-          十年目に体調を崩したのをきっかけに、健康に関して興味を抱くようになり<br>
+          十年目に体調を崩したのをきっかけに、健康に関して興味を抱くようになり<br class="br-sp">
           パーソナルジム・ホットヨガに通い出す。
         </p>
         <p class="main-p9">
-          その中でキャリアチェンジという道が浮かび、<br>
+          その中でキャリアチェンジという道が浮かび、<br class="br-sp">
           退職後、プログラミング・英語学習を始めました。
         </p>
         <p class="main-p10">
@@ -86,7 +90,7 @@
         <!-- 左部分 -->
         <div class="col-md-6 col-xs-12 text-center">
           <img src="./assets/img/me.jpg" class="me">
-          <div class="row">
+          <div class="row nn">
             <h3 class="skills text-center">Skills</h3>
             <!-- 言語スキル -->
             <div class="col-md-6 col-xs-6">
@@ -158,11 +162,11 @@
           <table style="margin:0 auto;color:#fff">
             <tr>
             <td>2002年</td>
-              <td>琉球大学情報工学科入学</td>
+              <td>琉球大学情報工学科 入学</td>
             </tr>
             <tr>
             <td>2004年</td>
-              <td>琉球大学情報工学科退学</td>
+              <td>琉球大学情報工学科 退学</td>
             </tr>
             <tr>
             <td></td>
@@ -170,7 +174,7 @@
             </tr>
             <tr>
             <td>2008年</td>
-              <td>琉球大学法文学部経済専攻卒業</td>
+              <td>琉球大学法文学部経済専攻 卒業</td>
             </tr>
             <tr>
             <td></td>
@@ -199,13 +203,13 @@
             </tr>
           </table>
           <div class="row icon">
-            <div class="col-md-4 col-xs-4">
+            <div class="col-md-4 col-xs-4 sp-icon">
               <a href="https://twitter.com/tengan36"><i class="fab fa-twitter fa-3x"></i></a>
             </div>
-            <div class="col-md-4 col-xs-4">
+            <div class="col-md-4 col-xs-4 sp-icon">
               <a href="https://www.facebook.com/yuji.yakena"><i class="fab fa-facebook fa-3x"></i></a>
             </div>
-            <div class="col-md-4 col-xs-4">
+            <div class="col-md-4 col-xs-4 sp-icon">
               <a href="https://yakeyu.net/"><i class="fab fa-wordpress fa-3x"></i></a>
             </div>
           </div>
@@ -217,7 +221,7 @@
   <!-- service -->
   <div class="service fadein" id="service">
     <div class="container">
-    <h2 class="h2-contents">Want to Job</h2>
+    <h2 class="h2-contents hg">Want to Job</h2>
       <h3 class="service-h3 text-center">現在希望する職種です。<br class="br-sp">ご興味がございましたら、下記の問い合わせフォームよりお願い致します。</h3>
       <div class="row text-center">
         <!-- サービス１ -->
@@ -302,6 +306,7 @@
   <script src="assets/js/vegas.min.js"></script>
   <!-- テキストをタイピング風に表示・jQueryのプラグイン -->
   <script src="assets/js/t.min.js"></script>  
+  <!-- カスタムjsファイル -->
   <script src="assets/js/app.js"></script>
 </body>
 </html>
