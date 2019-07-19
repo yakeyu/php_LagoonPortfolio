@@ -48,7 +48,7 @@
   
   <!-- レスポンシブ時に表示 -->
   <div class="button fadein scrollin">
-    <button class="example sp">MESSAGE</button>
+    <button class="example sp">TAP HERE</button>
   </div>
   <!-- メッセージ -->
   <div class="main fadein pc" id="message">
@@ -73,7 +73,7 @@
         </p>
         <p class="main-p9">
           その中でキャリアチェンジという道が浮かび、<br class="br-sp">
-          退職後、プログラミング・英語学習を始めました。
+          退職後、プログラミング・英語学習を開始。
         </p>
         <p class="main-p10">
           現在はヘルスケア事業への転職も視野に入れて、活動中です。
@@ -204,13 +204,13 @@
           </table>
           <div class="row icon">
             <div class="col-md-4 col-xs-4 sp-icon">
-              <a href="https://twitter.com/tengan36"><i class="fab fa-twitter fa-3x"></i></a>
+              <a href="https://twitter.com/tengan36" target="_blank"><i class="fab fa-twitter fa-3x"></i></a>
             </div>
             <div class="col-md-4 col-xs-4 sp-icon">
-              <a href="https://www.facebook.com/yuji.yakena"><i class="fab fa-facebook fa-3x"></i></a>
+              <a href="https://www.facebook.com/yuji.yakena" target="_blank"><i class="fab fa-facebook fa-3x"></i></a>
             </div>
             <div class="col-md-4 col-xs-4 sp-icon">
-              <a href="https://yakeyu.net/"><i class="fab fa-wordpress fa-3x"></i></a>
+              <a href="https://yakeyu.net/" target="_blank"><i class="fab fa-wordpress fa-3x"></i></a>
             </div>
           </div>
         </div>
@@ -284,7 +284,7 @@
               <textarea class="form-control" rows="7" id="message" name="message" placeholder="Your Message*" required="required"></textarea>
             </div>
             <div class="text-center">
-              <button class="btn btn-block btn-round btn-d" id="cfsubmit" type="submit">Submit</button>
+              <input class="btn btn-block btn-round btn-d" id="cfsubmit" type="submit" name="submit" value="submit">
             </div>
           </form>
         </div>

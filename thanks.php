@@ -1,24 +1,18 @@
 <?php
 
-  $name = htmlspecialchars($_POST['name']);
-  $email = htmlspecialchars($_POST['email']);
-  $message = htmlspecialchars($_POST['message']);
+$name = htmlspecialchars($_POST['name']);
+$emailFrom = htmlspecialchars($_POST['email']);
+$message = htmlspecialchars($_POST['message']);
 
-  // DBに接続
-  $dsn = 'mysql:dbname=php_LagoonPortfolio;host=localhost';
-  $user = 'root';
-  $password = '';
+if(isset($_POST['submit'])){
+  var_dump($name);
+  $subject = "test mail";
+  $mailTo = "yakeyu36@gmail.com";
+  $headers = "From: ".$mailFrom;
 
-  $dbh = new PDO($dsn, $user, $password);
-  $dbh->query('SET NAMES utf8');
+  mail($mailTo, $subject, $message, $headers);
+}
 
-  // DBに登録
-  $sql = 'INSERT INTO contact (name,email,message) VALUES ("'.$name.'","'.$email.'","'.$message.'")';
-  $stmt = $dbh->prepare($sql);
-  $stmt->execute();
-
-  // DB切断
-  $dbh = null;
 ?>
 
 <!DOCTYPE html>
@@ -47,7 +41,7 @@
     <!-- メールアドレスの確認 -->
     <div class="textbox">
       <i class="fas fa-envelope"></i>
-      <p><?php echo $email; ?></p>
+      <p><?php echo $emailFrom; ?></p>
     </div>
     <!-- 問い合わせ内容の確認 -->
     <div class="textbox">

@@ -1076,7 +1076,7 @@ footer{
   }
   
   .about table{
-    font-size: 14px;
+    font-size: 12px;
   }
   
   .fab, .fas{
@@ -1162,6 +1162,7 @@ footer{
   
   .fa-desktop{
     font-size: 60px;
+    margin-top: 50px;
   }
   
   .fa-wordpress,.fa-building{
