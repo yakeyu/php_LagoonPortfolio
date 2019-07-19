@@ -1,8 +1,8 @@
 <?php
 
-  $name = htmlspecialchars($_POST['name']);
-  $email = htmlspecialchars($_POST['email']);
-  $message = htmlspecialchars($_POST['message']);
+$name = htmlspecialchars($_POST['name']);
+$emailFrom = htmlspecialchars($_POST['email']);
+$message = htmlspecialchars($_POST['message']);
 
 ?>
 
@@ -32,7 +32,7 @@
     <!-- メールアドレスの確認 -->
     <div class="textbox">
       <i class="fas fa-envelope"></i>
-      <p><?php echo $email; ?></p>
+      <p><?php echo $emailFrom; ?></p>
     </div>
     <!-- 問い合わせ内容の確認 -->
     <div class="textbox">
@@ -41,12 +41,12 @@
     </div>
     <!-- 値をthanks.phpへ送信するための記述（画面には表示されない） -->
     <input name="name" value="<?php echo $name; ?>" type="hidden">
-    <input name="email" value="<?php echo $email; ?>" type="hidden">
+    <input name="email" value="<?php echo $emailFrom; ?>" type="hidden">
     <input name="message" value="<?php echo $message; ?>" type="hidden">
     <!-- 戻るボタン -->
     <input type="button" class="btn return" value="Return" onclick="history.back()">
     <!-- OKボタン -->
-    <input type="submit" class="btn ok" value="OK">
+    <input type="submit" class="btn ok" value="OK" name="submit">
   </form>
   
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>    
