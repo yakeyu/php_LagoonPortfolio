@@ -5,7 +5,6 @@ $emailFrom = htmlspecialchars($_POST['email']);
 $message = htmlspecialchars($_POST['message']);
 
 if(isset($_POST['submit'])){
-  var_dump($name);
   $subject = "test mail";
   $mailTo = "yakeyu36@gmail.com";
   $headers = "From: ".$mailFrom;
