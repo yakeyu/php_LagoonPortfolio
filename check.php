@@ -46,7 +46,9 @@ $message = htmlspecialchars($_POST['message']);
     <!-- 戻るボタン -->
     <input type="button" class="btn return" value="Return" onclick="history.back()">
     <!-- OKボタン -->
-    <input type="submit" class="btn ok" value="OK" name="submit">
+    <!-- <input type="submit" class="btn ok" value="OK" name="submit"> -->
+    <button type="submit" name="submit" class="btn ok">OK</button>
+
   </form>
   
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>    
